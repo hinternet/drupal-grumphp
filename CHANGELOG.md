@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/hinternet/drupal-grumphp/compare/v1.0.0...v1.0.1) (2023-04-14)
+
+
+### Bug Fixes
+
+* **composer:** rename composer package to hinternet/drupal-grumphp ([0c19d74](https://github.com/hinternet/drupal-grumphp/commit/0c19d741f61333c0dfb046b27f24b1df1ed4817b))
+
 # 1.0.0 (2023-04-14)
 
 
