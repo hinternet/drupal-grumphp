@@ -1,0 +1,60 @@
+{
+    "name": "carcheky/drupal-grumphp",
+    "description": "grumphp 4 drupal",
+    "license": "GPL-2.0-or-later",
+    "type": "library",
+    "authors": [
+        {
+            "name": "carcheky",
+            "email": "carcheky@gmail.com"
+        }
+    ],
+    "require": {
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+        "drupal/core-dev": "^9",
+        "ergebnis/composer-normalize": "^2.28",
+        "mglaman/drupal-check": "^1",
+        "php-parallel-lint/php-parallel-lint": "^1.3",
+        "phpmd/phpmd": "^2.12",
+        "phpro/grumphp": "^1",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpstan/phpstan": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "GrumphpDrupal\\": "src/"
+        }
+    },
+    "archive": {
+        "exclude": [
+            ".gitignore",
+            ".gitattributes",
+            ".gitignore",
+            ".releaserc",
+            "CONTRIBUTING.md",
+            "drupal-grumphp.code-workspace",
+            ".github"
+        ]
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true,
+            "phpro/grumphp": true
+        }
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "file-mapping": {
+                "[web-root]/../grumphp.yml": {
+                    "mode": "replace",
+                    "overwrite": false,
+                    "path": "configs/grumphp.yml"
+                }
+            }
+        },
+        "grumphp": {
+            "config-default-path": "configs/grumphp.yml"
+        }
+    }
+}

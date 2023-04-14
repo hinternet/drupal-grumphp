@@ -1,0 +1,6 @@
+.gitattributes export-ignore
+.gitignore export-ignore
+.releaserc export-ignore
+CONTRIBUTING.md export-ignore
+drupal-grumphp.code-workspace export-ignore
+.github export-ignore
