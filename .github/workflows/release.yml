@@ -10,7 +10,7 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     concurrency:
-      group: release
+      group: release1
       cancel-in-progress: true
     steps:
       - name: Sleep for 15 seconds
