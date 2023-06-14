@@ -2,7 +2,7 @@
   "branches": [
     "main",
     "dev",
-    "1.x"
+    "*.x"
   ],
   "plugins": [
     "@semantic-release/commit-analyzer",
