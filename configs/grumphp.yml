@@ -4,16 +4,16 @@ parameters:
 grumphp:
   process_timeout: 300
   git_hook_variables:
-    EXEC_GRUMPHP_COMMAND:  "read container; docker compose start $container && docker compose exec -T $container"
+    EXEC_GRUMPHP_COMMAND: "docker compose start php && docker compose exec -T php"
   extensions:
     - GrumphpDrupal\ExtensionLoader
   hooks_dir: ~
   ascii:
-      failed: vendor/hinternet/drupal-grumphp/configs/grumphp-grumpy.txt
-      succeeded: vendor/hinternet/drupal-grumphp/configs/grumphp-happy.txt
+    failed: vendor/carcheky/drupalgrumphp/configs/grumphp-grumpy.txt
+    succeeded: vendor/carcheky/drupalgrumphp/configs/grumphp-happy.txt
   parallel:
-      enabled: false
-      max_workers: 32
+    enabled: false
+    max_workers: 32
   fixer:
     enabled: true
     fix_by_default: true
@@ -35,8 +35,9 @@ grumphp:
       matchers:
         # Custom
         Does not follow the format of conventional commits (https://www.conventionalcommits.org/en/v1.0.0/): /(^(build|chore|ci|docs|feat|fix|perf|refactor|revert|style|test){1}(\([\w\-\.]+\))?(!)?:([\w ])+([\s\S]*))/m
+
     phpstan:
-      configuration: vendor/hinternet/drupal-grumphp/configs/phpstan.neon
+      level: 5
       triggered_by:
         - php
         - inc
@@ -47,22 +48,11 @@ grumphp:
       memory_limit: "-1"
       use_grumphp_paths: true
       ignore_patterns:
-        [
-          "entornos_configuracion",
-          "contrib",
-          "vendor",
-          "node_modules",
-          "core",
-          "libraries",
-          "sites",
-          "libraries",
-          "drush",
-          "tests",
-          "scripts",
-        ]
+        - settings.php
+        - settings.local.php
+
     phpmd:
       report_format: text
-      ruleset: ["vendor/hinternet/drupal-grumphp/configs/phpmd.xml"]
       triggered_by: ["php"]
       whitelist_patterns:
         - /^web\/modules\/custom\/(.*)/
@@ -70,6 +60,7 @@ grumphp:
         - /^web\/profiles\/custom\/(.*)/
       exclude:
         - "excluded_module"
+
     phpcs:
       encoding: utf-8
       triggered_by:
@@ -77,31 +68,23 @@ grumphp:
         - module
         - inc
         - install
-        - test
         - profile
         - theme
-        - info
       standard: Drupal,DrupalPractice
       whitelist_patterns:
         - web/modules/custom
         - web/themes/custom
         - web/profiles/custom
       ignore_patterns:
-        - .github
-        - .gitlab
-        - /config/
-        - /drush/
-        - /web/robots.txt
-        - /web/sites/default/
-        - bower_components
-        - node_modules
-        - /vendor
         - settings.php
         - settings.local.php
-        - "bs-config.js"
-        - "gulpfile.js"
+
     phplint: ~
+
     jsonlint: ~
+
     drupalcheck: ~
+
     composer: ~
-    composer_normalize: ~ # composer require --dev ergebnis/composer-normalize
+
+    composer_normalize: ~
