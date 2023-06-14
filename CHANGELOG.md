@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/hinternet/drupal-grumphp/compare/v1.0.1...v1.0.2) (2023-06-14)
+
+
+### Bug Fixes
+
+* grumphp pre-commit fail ([e42de72](https://github.com/hinternet/drupal-grumphp/commit/e42de72bfe1310e00a9cfaf2eba80b19a480bc70))
+
 ## [1.0.1](https://github.com/hinternet/drupal-grumphp/compare/v1.0.0...v1.0.1) (2023-04-14)
 
 
