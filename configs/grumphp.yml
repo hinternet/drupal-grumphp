@@ -4,7 +4,7 @@ parameters:
 grumphp:
   process_timeout: 300
   git_hook_variables:
-    EXEC_GRUMPHP_COMMAND:  "read container; docker compose start $container && docker compose exec -T $container"
+    EXEC_GRUMPHP_COMMAND: "docker compose start php && docker compose exec -T php"
   extensions:
     - GrumphpDrupal\ExtensionLoader
   hooks_dir: ~
