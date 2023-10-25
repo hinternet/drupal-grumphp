@@ -1,5 +1,5 @@
 {
-    "name": "hinternet/drupal-grumphp",
+    "name": "carcheky/drupal-grumphp",
     "description": "grumphp 4 drupal",
     "license": "GPL-2.0-or-later",
     "type": "library",
