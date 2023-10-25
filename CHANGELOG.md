@@ -1,3 +1,10 @@
+## [3.0.2](https://github.com/carcheky/drupal-grumphp/compare/v3.0.1...v3.0.2) (2023-10-25)
+
+
+### Bug Fixes
+
+* remove extension loader ([8caa72e](https://github.com/carcheky/drupal-grumphp/commit/8caa72eec0836b27e064429ced2b7c3b8111491d))
+
 ## [3.0.1](https://github.com/carcheky/drupal-grumphp/compare/v3.0.0...v3.0.1) (2023-10-25)
 
 
