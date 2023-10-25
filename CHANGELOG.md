@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/carcheky/drupal-grumphp/compare/v3.0.0...v3.0.1) (2023-10-25)
+
+
+### Bug Fixes
+
+* grumphp paths ([8499d8e](https://github.com/carcheky/drupal-grumphp/commit/8499d8e5e2fafdb7744028720857506acd63afc9))
+
 # [3.0.0](https://github.com/hinternet/drupal-grumphp/compare/v2.0.1...v3.0.0) (2023-10-25)
 
 
