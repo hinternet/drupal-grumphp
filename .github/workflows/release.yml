@@ -4,6 +4,10 @@ on:
     branches:
       - main
       - "*.x"
+      - next
+      - next-major
+      - beta
+      - alpha
 jobs:
   release:
     name: Release
@@ -13,6 +17,7 @@ jobs:
       cancel-in-progress: true
     steps:
       - name: Sleep for 60 seconds
+        if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/*.x' }}
         run: sleep 60s
         shell: bash
       - name: Checkout
@@ -26,6 +31,15 @@ jobs:
       - name: Install dependencies
         run: npm install semantic-release @semantic-release/github @semantic-release/changelog @semantic-release/git
       - name: Release
+        if: ${{ github.ref == 'refs/heads/main' || github.ref == 'refs/heads/*.x' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
+      - name: Dry Run Release
+        if: ${{ github.ref == 'refs/heads/next' || github.ref == 'refs/heads/next-major' || github.ref == 'refs/heads/beta' || github.ref == 'refs/heads/alpha' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npx semantic-release --dry-run
+
+
+

@@ -13,16 +13,10 @@
         "dealerdirect/phpcodesniffer-composer-installer": "*",
         "drupal/core-dev": "*",
         "ergebnis/composer-normalize": "*",
-        "mglaman/drupal-check": "*",
         "php-parallel-lint/php-parallel-lint": "*",
         "phpmd/phpmd": "*",
         "phpro/grumphp": "*",
         "phpspec/prophecy-phpunit": "*"
-    },
-    "autoload": {
-        "psr-4": {
-            "GrumphpDrupal\\": "src/"
-        }
     },
     "archive": {
         "exclude": [
