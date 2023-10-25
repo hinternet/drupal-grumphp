@@ -9,8 +9,8 @@ grumphp:
     - GrumphpDrupal\ExtensionLoader
   hooks_dir: ~
   ascii:
-    failed: vendor/hinternet/drupal-grumphp/configs/grumphp-grumpy.txt
-    succeeded: vendor/hinternet/drupal-grumphp/configs/grumphp-happy.txt
+    failed: vendor/carcheky/drupal-grumphp/configs/grumphp-grumpy.txt
+    succeeded: vendor/carcheky/drupal-grumphp/configs/grumphp-happy.txt
   parallel:
     enabled: false
     max_workers: 32
