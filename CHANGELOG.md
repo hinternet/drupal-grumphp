@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/hinternet/drupal-grumphp/compare/v2.0.1...v3.0.0) (2023-10-25)
+
+
+### Features
+
+* removed drupal-check ([74413fc](https://github.com/hinternet/drupal-grumphp/commit/74413fcb4805536ca9784ee86ad07d6b9dde1149))
+
+
+### BREAKING CHANGES
+
+* drupal-check removed
+
 ## [2.0.1](https://github.com/hinternet/drupal-grumphp/compare/v2.0.0...v2.0.1) (2023-06-14)
 
 
