@@ -83,8 +83,6 @@ grumphp:
 
     jsonlint: ~
 
-    drupalcheck: ~
-
     composer: ~
 
     composer_normalize: ~
