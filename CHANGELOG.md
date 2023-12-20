@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/hinternet/drupal-grumphp/compare/v3.0.0...v3.0.1) (2023-12-20)
+
+
+### Bug Fixes
+
+* added friendsofphp/php-cs-fixer ([637be80](https://github.com/hinternet/drupal-grumphp/commit/637be8043221367cdf9c83529389cd4bb7166107))
+
 # [3.0.0](https://github.com/hinternet/drupal-grumphp/compare/v2.0.1...v3.0.0) (2023-10-25)
 
 
