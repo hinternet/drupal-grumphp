@@ -1,3 +1,10 @@
+## [3.0.3](https://github.com/carcheky/drupal-grumphp/compare/v3.0.2...v3.0.3) (2023-12-20)
+
+
+### Bug Fixes
+
+* added friendsofphp/php-cs-fixer ([031a84c](https://github.com/carcheky/drupal-grumphp/commit/031a84c999cd68c4e3d6129681b941e474aea2e4))
+
 ## [3.0.2](https://github.com/carcheky/drupal-grumphp/compare/v3.0.1...v3.0.2) (2023-10-25)
 
 
