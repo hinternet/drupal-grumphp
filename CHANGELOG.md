@@ -1,3 +1,12 @@
+## [3.0.2](https://github.com/hinternet/drupal-grumphp/compare/v3.0.1...v3.0.2) (2024-01-04)
+
+
+### Bug Fixes
+
+* added friendsofphp/php-cs-fixer ([031a84c](https://github.com/hinternet/drupal-grumphp/commit/031a84c999cd68c4e3d6129681b941e474aea2e4))
+* grumphp paths ([8499d8e](https://github.com/hinternet/drupal-grumphp/commit/8499d8e5e2fafdb7744028720857506acd63afc9))
+* remove extension loader ([8caa72e](https://github.com/hinternet/drupal-grumphp/commit/8caa72eec0836b27e064429ced2b7c3b8111491d))
+
 ## [3.0.1](https://github.com/hinternet/drupal-grumphp/compare/v3.0.0...v3.0.1) (2023-12-20)
 
 
